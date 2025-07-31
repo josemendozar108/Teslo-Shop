@@ -62,7 +62,7 @@ export const TopMenu = () => {
 
         <Link href={
           ( totalItemsInCart === 0)
-            ? '/empty'
+            ? "/empty"
             : "/cart"
         } className="mx-2">
           <div className="relative">
