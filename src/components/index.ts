@@ -8,6 +8,12 @@ export * from './product/slideshow/ProductSlideShow';
 export * from './product/slideshow/ProductMobileSlideShow'; 
 export * from './product/stock-label/StockLabel'; 
 
+export * from './providers/Providers'; 
+export * from './paypal/PayPalButton'; 
+
+
+export * from './orders/OrderStatus'; 
+
 
 export * from './ui/not-found/PageNotFound';
 export * from './ui/sidebar/Sidebar'; 
