@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { OrderStatus, PayPalButton, Title } from '@/components';
 import { initialData } from '@/seed/seed';
 import Image from 'next/image';
-import clsx from 'clsx';
-import { IoCardOutline } from 'react-icons/io5';
 import { getOrderById } from '@/actions';
 import { redirect } from 'next/navigation';
 import { currencyFormat } from '@/utils';
