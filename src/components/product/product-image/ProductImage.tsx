@@ -22,11 +22,15 @@ export const ProductImage = ({
   onMouseLeave,
 }: Props) => {
 
-  const localSrc = ( src ) 
-    ? src.startsWith('http') // https://urlcompletodelaimagen.jpg
+const localSrc = !src
+  ? "/imgs/placeholder.jpg"   // 👈 fallback seguro
+  : src.startsWith("http")
+    ? src
+    : src.startsWith("/products")
       ? src
-      : `/products/${ src }`
-    : '/imgs/placeholder.jpg';
+      : src.startsWith("/")
+        ? src
+        : `/products/${src}`;
 
   return (
     <Image
