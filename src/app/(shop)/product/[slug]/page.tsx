@@ -2,7 +2,7 @@ export const revalidate = 604800; // 7 dias
 
 
 import { getProductBySlug } from "@/actions";
-import { ProductMobileSlideShow, ProductSlideShow, QuantitySelector, SizeSelector, StockLabel } from "@/components";
+import { ProductMobileSlideShow, ProductSlideShow, StockLabel } from "@/components";
 import { titleFonts } from "@/config/fonts";
 import { Metadata, ResolvingMetadata } from "next";
 // import { initialData } from "@/seed/seed"; 
