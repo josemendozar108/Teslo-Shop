@@ -12,6 +12,7 @@ import './slideshow.css';
 
 // import required modules
 import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
+import { ProductImage } from '../product-image/ProductImage';
 
 
 interface Props {
@@ -40,7 +41,7 @@ export const ProductMobileSlideShow = ({ images, title, className }: Props) => {
         {
             images.map(image => (
             <SwiperSlide key={image}>
-                <Image
+                <ProductImage
                 width={600}
                 height={500}
                 src={`/products/${image}`}
